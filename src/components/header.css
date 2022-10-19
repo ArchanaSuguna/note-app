@@ -1,0 +1,9 @@
+.header{
+    height: 50px;
+    width: 100%;
+    background: yellow;
+    display: flex;
+}
+.header-desc{
+    margin: 0;
+}

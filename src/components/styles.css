@@ -1,0 +1,47 @@
+.body{
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+}
+
+form.create-note{
+   position: relative;
+   width: 450px;
+   margin: 30px auto 20px auto;
+   padding: 15px;
+   border-radius: 7px;
+   box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea{
+    width: 100%;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    border: none;
+    resize: none;
+}
+
+form.create-note button{
+   position: absolute;
+   right: 18px;
+    bottom: -18px;
+    width: 31px;
+    border: none;
+    background: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.note-area{
+    width: 800px;
+}
+
+.note-content{
+    height: 100px;
+    width: 200px;
+    box-shadow: 0 1px 5px rgb(138 137 137);
+    border-radius: 3px;
+}
+
