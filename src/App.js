@@ -4,6 +4,7 @@ import CreateNote from "./components/createNote";
 import Note from "./components/note"
 import { useState } from 'react';
 
+//App
 
 function App() {
   const [notes, setNotes] = useState([]);

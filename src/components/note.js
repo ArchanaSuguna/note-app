@@ -5,6 +5,7 @@ import "./styles.css"
 export default function note({title, content, deleteNote}) {
 
   return (
+    //ass
         <div className='note-content'> 
         <p>{title}</p>
         <div>{content}</div>
