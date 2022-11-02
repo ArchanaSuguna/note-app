@@ -8,6 +8,8 @@ const CreateNote = (props) => {
     content: ""
   });
 
+  const [isExpanded, setIsExpanded] = useState(false);
+
 const handleChange = (e) => {
 
   const { name, value } = e.target;
@@ -30,13 +32,15 @@ const addNote = (e) => {
 
   return (
     <form className='create-note'>
-    <input type="textarea" 
+   {isExpanded && <input type="textarea" 
     placeholder='Title'
     name="title"
     value={note.title}
     onChange={handleChange}
-  /> 
-  <textarea name="content" placeholder='Enter Note...' value={note.content} onChange={handleChange}/>
+  /> }
+  <textarea name="content" placeholder='Enter Note...' rows={isExpanded ? 3 : 1} value={note.content} 
+  onClick={() => setIsExpanded(true)}
+  onChange={handleChange}/>
   <button>
   <AddCircleIcon onClick={addNote}/>
   </button>

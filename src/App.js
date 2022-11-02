@@ -25,7 +25,7 @@ function App() {
     <>
       <Header/>
       <CreateNote onAdd={changeNote}/>
-      <div className="note-create">
+      <div className="note-area">
       {notes.length >= 1 && 
       notes.map((note, index) => {
        return <Note key={index} title={note.title} content={note.content} deleteNote={() => deleteNote(note)}/> 

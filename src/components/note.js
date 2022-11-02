@@ -7,9 +7,9 @@ export default function note({title, content, deleteNote}) {
   return (
     //ass
         <div className='note-content'> 
-        <p>{title}</p>
-        <div>{content}</div>
-        <DeleteIcon onClick={deleteNote}/>
+        <p className='title-style'>{title}</p>
+        <div className='title-content'>{content}</div>
+        <DeleteIcon className='icon' onClick={deleteNote}/>
         </div>
     )
 }

@@ -35,7 +35,24 @@ form.create-note button{
 }
 
 .note-area{
-    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+
+.title-style{
+    padding: 5px;
+    margin: 0;
+}
+
+.title-content{
+    padding: 5px;
+}
+
+.icon{
+    float: right;
+    margin-top: -2
 }
 
 .note-content{
@@ -43,5 +60,6 @@ form.create-note button{
     width: 200px;
     box-shadow: 0 1px 5px rgb(138 137 137);
     border-radius: 3px;
+    margin: 10px;
 }
 
